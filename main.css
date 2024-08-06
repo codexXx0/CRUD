@@ -146,9 +146,16 @@ input:checked + .slider:before {
 
 .inputs {
     #title ,
-    #count ,
-    #category{
+    #count {
         width: 100%;
+    }
+    #category {
+        color: rgb(116, 112, 112);
+        option{
+            margin: 5px 10px;
+            background-color: var(--btnColor);
+            color: white;
+        }
     }
     #price {
         display: flex;

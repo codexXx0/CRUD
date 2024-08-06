@@ -23,10 +23,19 @@
             <input onkeyup="getTotal()"  id="tax" type="number" class="inp" placeholder="Taxes">
             <input onkeyup="getTotal()"  id="ads" type="number" class="inp" placeholder="Ads">
             <input onkeyup="getTotal()"  id="dis" type="number" class="inp" placeholder="Discount">
+            <select id="category"  class="inp" placeholder="Category">
+                <option id="firstcat" >Select Cataory</option>
+                <option >Phone</option>
+                <option >Watch</option>
+                <option >TV</option>
+                <option >Smart Phone</option>
+                <option >Smart Watch</option>
+                <option >Smart TV</option>
+            </select>
             <div class="total">Total: 0</div>
         </div>
         <input type="number" id="count" class="inp" placeholder="Count" min="0">
-        <input type="text" id="category" class="inp" placeholder="Category" >
+        <!-- <input type="text" id="category" class="inp" placeholder="Category" > -->
         <div id="save"></div>
         <button  id="create" class="btn" >Create</button>
     </div>
