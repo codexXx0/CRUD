@@ -1,0 +1,203 @@
+:root {
+    --backGround : #222222 ;
+    --inputBackGround : #111111 ; 
+    --btnColor : #290767 ;
+    --textColor : white ;
+    --btntextcolor:white;
+}
+body.light-mode {
+    --backGround : #E4E5F1 ;
+    --inputBackGround : #b9b9b9 ; 
+    --btnColor : #290767 ;
+    --textColor : rgb(0, 0, 0) ;
+    --btntextcolor:white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+*{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--backGround);
+    color: var(--textColor);
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+    h1{
+        margin-bottom: 5px;
+    }
+    h2{
+        font-weight: normal;
+    }
+    /* The switch - the box around the slider */
+.switch {
+    position: absolute;
+    display: inline-block;
+    right: 25px;
+    top: 25px;
+    width: 60px;
+    height: 29px;
+}
+
+  /* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+  /* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:var(--btnColor);
+    box-shadow: 0 0 5px var(--textColor);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 5px;
+    bottom: 5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #ccc;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 5px var(--textColor);
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+}
+
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+}
+
+.inp {
+    margin-bottom: 8px;
+    background-color: var(--inputBackGround);
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: left;
+    box-sizing: border-box;
+    font-size: large;
+    color: var(--textColor);
+    flex-grow: 1;
+}
+.inp:focus {
+    outline: 2px solid var(--btnColor);
+}
+.btn {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    background-color: var(--btnColor);
+    color: var(--btntextcolor);
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+.btn:hover {
+    background-color: #572aaa;
+}
+
+.tab {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.inputs {
+    #title ,
+    #count ,
+    #category{
+        width: 100%;
+    }
+    #price {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 8px; 
+
+        .total {
+            background-color: #8d1414e3;
+            align-self: flex-start;
+            padding: 11px;
+            font-size: large;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            color: var(--btntextcolor);
+        }
+    }
+    #create {
+        width: 100%;
+    }
+}
+
+.search {
+    #search {
+        width: 100%;
+    }
+    .group-btn {
+        display: flex;
+        justify-content: space-between;
+        button {
+            flex-basis: calc(50% - 5px);
+        }
+    }
+}
+
+.delete {
+    margin-bottom: 20px;
+    #deleteAll {
+        width: 100%;
+    }
+}
+
+.table {
+    width: 100%;
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    thead th {
+        padding: 5px;
+        padding-bottom: 10px;
+    }
+}
