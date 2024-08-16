@@ -1,6 +1,7 @@
 :root {
     --backGround : #222222 ;
     --inputBackGround : #111111 ; 
+    --inputTable : #272727 ; 
     --btnColor : #290767 ;
     --textColor : white ;
     --btntextcolor:white;
@@ -8,6 +9,7 @@
 body.light-mode {
     --backGround : #E4E5F1 ;
     --inputBackGround : #b9b9b9 ; 
+    --inputTable : #dadada ; 
     --btnColor : #290767 ;
     --textColor : rgb(0, 0, 0) ;
     --btntextcolor:white;
@@ -204,7 +206,24 @@ input:checked + .slider:before {
 table {
     width: 100%;
     thead th {
-        padding: 5px;
-        padding-bottom: 10px;
+        padding: 15px 20px;
+        background-color: var(--inputTable);
+        border-radius: 8px;
+    }
+    .tbody tr td {
+        padding: 15px;
+        background-color: var(--inputTable);
+        border-radius: 8px;
+    }
+    .tbody tr td:nth-child(11)   {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width:500px) {
+    table .tbody tr td:nth-child(11)   {
+        font-size: 13px;
     }
 }

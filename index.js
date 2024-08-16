@@ -247,7 +247,7 @@ function searchData(value) {
                     <td>${elementArr[i].Category}</td>
                     <td><button onclick="update(${i})" class="btn tab">Update</button></td>
                     <td>
-                        <button onclick="deleteSing(${i})" class="btn tab">Delete</button>
+                        <button id="delTable" onclick="deleteSing(${i})" class="btn tab">Delete</button>
                         <button id="delOne" onclick="deleteOne(${i})"  class="btn tab">Delete One</button>
                     </td>
                 </tr>
